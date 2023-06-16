@@ -14,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={outfit.className}>
 
-        <header className='flex justify-center py-6'>
-          <div className="w-10/12 flex justify-between">
+        <header className='flex justify-center py-6 lg:py-7'>
+          <div className="w-10/12 lg:w-8/12 flex justify-between">
             <h2 className='text-white text-2xl'>
               Kika Decora
             </h2>
