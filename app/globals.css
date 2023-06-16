@@ -16,7 +16,7 @@
 } */
 
 body {
-  background-color: var(--hero-color);
+  background-color: #fff;
 }
 
 header {
@@ -25,4 +25,12 @@ header {
 
 .home-hero {
   background-color: var(--hero-color);
+}
+
+.svg-wrap {
+  position: relative;
+}
+.svg-mobile {
+  top: -3px;
+  position: absolute;
 }
