@@ -26,7 +26,7 @@ export default function Home() {
           <div className='mt-1 md:mt-4'>
             <Image 
               src="/calendar.svg"
-              alt="Picture of the author"
+              alt="Illustration of a calendar and a man dancing."
               width={500}
               height={500}
             />

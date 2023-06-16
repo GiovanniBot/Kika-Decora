@@ -1,5 +1,6 @@
 import './globals.css'
 import { Outfit } from 'next/font/google'
+import Image from 'next/image'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -22,14 +23,18 @@ export default function RootLayout({
             <h2 className='text-white text-2xl'>
               Kika Decora
             </h2>
-            <div className='border rounded-full text-green-700 border-green-700 text-xl'>
-              WA
-            </div>
+            <a href="#">
+              <Image 
+                  src="/WhatsApp.svg"
+                  alt="Picture of the author"
+                  width={66}
+                  height={66}
+                />
+            </a>
           </div>
         </header>
 
         {children}
-        
       </body>
     </html>
   )
