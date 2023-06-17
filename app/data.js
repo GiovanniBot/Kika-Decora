@@ -1,0 +1,123 @@
+
+export const themes = [
+  {
+    id: 1,
+    topFive: true,
+    newTheme: false,
+    tag: ["Filme", "Jogos", "Desenho"],
+    name: "Spider-man",
+    mainImg: "/images/spider-man/main-img.png",
+    imgs: [
+      { url: "/images/spider-man/img-01.png" },
+      { url: "/images/spider-man/img-02.png" },
+    ],
+  },
+  {
+    id: 2,
+    topFive: true,
+    newTheme: false,
+    tag: ["Aplicativos"],
+    name: "Tik Tok",
+    mainImg: "/images/tik-tok/main-img.png",
+    imgs: [
+      { url: "/images/tik-tok/img-01.png" },
+      { url: "/images/tik-tok/img-02.png" },
+    ],
+  },
+  {
+    id: 3,
+    topFive: true,
+    newTheme: false,
+    tag: ["Desenhos"],
+    name: "LadyBug",
+    mainImg: "/images/ladybug/main-img.png",
+    imgs: [
+      { url: "/images/ladybug/img-01.png" },
+      { url: "/images/ladybug/img-02.png" },
+    ],
+  },
+  {
+    id: 4,
+    topFive: false,
+    newTheme: true,
+    tag: ["Desenhos", "Jogos"],
+    name: "Sonic The Hedgehog",
+    mainImg: "/images/sonic-the-hedgehog/main-img.png",
+    imgs: [
+      { url: "/images/sonic-the-hedgehog/img-01.png" },
+      { url: "/images/sonic-the-hedgehog/img-02.png" },
+    ],
+  },
+  {
+    id: 5,
+    topFive: false,
+    newTheme: true,
+    tag: ["Filme", "Desenho"],
+    name: "Barbie",
+    mainImg: "/images/barbie/main-img.png",
+    imgs: [
+      { url: "/images/barbie/img-01.png" },
+      { url: "/images/barbie/img-02.png" },
+    ],
+  },
+  {
+    id: 6,
+    topFive: false,
+    newTheme: true,
+    tag: ["Filme", "Jogos", "Desenho"],
+    name: "Mario Bros",
+    mainImg: "/images/mario-bros/main-img.png",
+    imgs: [
+      { url: "/images/mario-bros/img-01.png" },
+      { url: "/images/mario-bros/img-02.png" },
+    ],
+  },
+  {
+    id: 7,
+    topFive: false,
+    newTheme: true,
+    tag: ["Filme", "Série"],
+    name: "Wandinha",
+    mainImg: "/images/wandinha/main-img.png",
+    imgs: [
+      { url: "/images/wandinha/img-01.png" },
+      { url: "/images/wandinha/img-02.png" },
+    ],
+  },
+  {
+    id: 8,
+    topFive: false,
+    newTheme: true,
+    tag: ["Filme", "Série"],
+    name: "Frozen",
+    mainImg: "/images/frozen/main-img.png",
+    imgs: [
+      { url: "/images/frozen/img-01.png" },
+      { url: "/images/frozen/img-02.png" },
+    ],
+  },
+  {
+    id: 9,
+    topFive: true,
+    newTheme: false,
+    tag: ["Desenho", "Série"],
+    name: "Naruto",
+    mainImg: "/images/naruto/main-img.png",
+    imgs: [
+      { url: "/images/naruto/img-01.png" },
+      { url: "/images/naruto/img-02.png" },
+    ],
+  },
+  {
+    id: 9,
+    topFive: true,
+    newTheme: false,
+    tag: ["Festas"],
+    name: "Pool party",
+    mainImg: "/images/pool-party/main-img.png",
+    imgs: [
+      { url: "/images/pool-party/img-01.png" },
+      { url: "/images/pool-party/img-02.png" },
+    ],
+  },
+];

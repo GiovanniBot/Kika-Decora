@@ -1,8 +1,14 @@
 import { Roboto } from 'next/font/google';
 import Image from 'next/image'
 import HeroButton from './components/Button/HeroButton'
+import Link from 'next/link';
+import { themes } from './data';
+
+const topFiveThemes = themes.filter((theme) => theme.topFive);
+const newThemes = themes.filter((theme) => theme.newTheme);
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"] });
+
 
 export default function Home() {
   return (
@@ -47,8 +53,7 @@ export default function Home() {
             <span>Painel Redondo</span>
           </div>
         </div>
-        
-
+      
         <div className='col-start-1 col-span-12 svg-wrap'>
           <svg width="auto" height="140" xmlns="http://www.w3.org/2000/svg" version="1.1" className='md:hidden svg-mobile'>
             <g className="layer">
@@ -70,8 +75,69 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section className='topFive mt-40 md:mt-0'>
-        Top 5
+
+      <section className='mt-40 md:mt-6 grid grid-cols-12'>
+        <div className='col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 flex justify-between mb-3'>
+          <span className='col-start-2 col-span-2 font-bold text-lg lg:text-2xl'>
+            Top 5
+          </span>
+          <Link href="/themes" className='font-normal text-sm text-slate-500 underline'>
+            Ver Todos
+          </Link>
+        </div>
+
+        <div className='media-scroller col-start-1 col-end-13 w-full whitespace-nowrap md:pl-16 lg:pl-0 lg:justify-center auto-cols-[39%] lg:auto-cols-[14%]'>
+
+          {topFiveThemes.map((theme) => (
+            <Link key={theme.id} href="/themes">
+              <div className='media-element'>
+                <Image
+                  src={theme.mainImg}
+                  alt={theme.name}
+                  width={150}
+                  height={150}
+                />
+
+                <p className='text-xs md:text-lg ms-2'>
+                  {theme.name}
+                </p>
+              </div>
+            </Link>
+          ))}
+
+        </div>
+      </section>
+
+      <section className='mt-6 lg:mt-20 grid grid-cols-12'>
+        <div className='col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 flex justify-between mb-3'>
+          <span className='col-start-2 col-span-2 font-bold text-lg lg:text-2xl'>
+            Novidades
+          </span>
+          <Link href="/themes" className='font-normal text-sm text-slate-500 underline'>
+            Ver Todos
+          </Link>
+        </div>
+
+        <div className='media-scroller col-start-1 col-end-13 w-full whitespace-nowrap md:pl-16 lg:pl-0 lg:justify-center auto-cols-[39%] lg:auto-cols-[14%]'>
+
+          {newThemes.map((theme) => (
+            <Link key={theme.id} href="/themes">
+              <div className='media-element'>
+                <Image
+                  src={theme.mainImg}
+                  alt={theme.name}
+                  width={150}
+                  height={150}
+                />
+
+                <p className='text-xs md:text-lg ms-2'>
+                  {theme.name}
+                </p>
+              </div>
+            </Link>
+          ))}
+
+        </div>
       </section>
     </main>
   )
