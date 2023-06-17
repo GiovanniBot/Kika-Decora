@@ -81,7 +81,7 @@ export default function Home() {
           <span className='col-start-2 col-span-2 font-bold text-lg lg:text-2xl'>
             Top 5
           </span>
-          <Link href="/themes" className='font-normal text-sm text-slate-500 underline'>
+          <Link href="/themes" className='font-normal text-sm lg:text-lg text-slate-500 underline'>
             Ver Todos
           </Link>
         </div>
@@ -113,7 +113,7 @@ export default function Home() {
           <span className='col-start-2 col-span-2 font-bold text-lg lg:text-2xl'>
             Novidades
           </span>
-          <Link href="/themes" className='font-normal text-sm text-slate-500 underline'>
+          <Link href="/themes" className='font-normal text-sm lg:text-lg text-slate-500 underline'>
             Ver Todos
           </Link>
         </div>
@@ -137,6 +137,30 @@ export default function Home() {
             </Link>
           ))}
 
+        </div>
+      </section>
+
+      <section className='mt-12 lg:mt-24 grid grid-cols-12'>
+        <p className='col-start-2 lg:col-start-3 col-span-8 font-bold text-lg lg:text-2xl mb-3 lg:mb-6'>
+          Onde você pode nos encontrar
+        </p>
+
+        <div className='col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 flex flex-wrap md:flex-row'>
+          <div className='basis-full md:basis-3/5 mb-3'>
+            <Image
+              className='w-full'
+              src="/maps.png"
+              alt="Mapa"
+              width={500}
+              height={500}
+            />
+          </div>
+          <div className='basis-full md:basis-2/5 md:pl-6 lg:text-xl lg:mt-3'>
+            <p><strong>Local:</strong> Rua exemplo, Madre de deus, n 1369.</p>
+            <p><strong>WhatsApp:</strong> (71) 9XXXX-XXXX</p>
+            <p><strong>E-mail:</strong> exemplo@exemplo.com</p>
+            <p><strong>Instagram:</strong> @kika_mini_decora</p>
+          </div>
         </div>
       </section>
     </main>
