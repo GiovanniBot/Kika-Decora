@@ -58,8 +58,8 @@ export default async function Home() {
           <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 lg:py-4 flex justify-around text-slate-300 text-xs md:text-sm lg:text-lg mb-0`}>
             <span>Painéis Temáticos</span>
             <span>Móveis Provençais</span>
-            <span className='hidden md:inline-block'>Trio de Cilindros e Mesaninos</span>
-            <span>Painel Redondo</span>
+            <span>Mesaninos</span>
+            <span className='hidden md:inline-block'>Painel Redondo</span>
           </div>
         </div>
       
@@ -98,7 +98,7 @@ export default async function Home() {
         <div className='media-scroller col-start-1 col-end-13 w-full whitespace-nowrap md:pl-16 lg:pl-0 lg:justify-center auto-cols-[39%] lg:auto-cols-[14%]'>
 
           {topFiveThemes.map((theme) => (
-            <Link key={theme.themeId} href={`/themes/${theme.themeId}`}>
+            <Link key={theme._id} href={`/themes/${theme._id}`}>
               <div className='media-element'>
                 <Image
                   src={theme.mainImg}
@@ -130,7 +130,7 @@ export default async function Home() {
         <div className='media-scroller col-start-1 col-end-13 w-full whitespace-nowrap md:pl-16 lg:pl-0 lg:justify-center auto-cols-[39%] lg:auto-cols-[14%]'>
 
           {newThemes.map((theme) => (
-            <Link key={theme.themeId} href={`/themes/${theme.themeId}`}>
+            <Link key={theme._id} href={`/themes/${theme._id}`}>
               <div className='media-element'>
                 <Image
                   src={theme.mainImg}

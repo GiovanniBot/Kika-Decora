@@ -1,5 +1,5 @@
 type Theme = {
-  themeId: string;
+  _id: string;
   topFive: boolean;
   newTheme: boolean;
   tag: string[];
