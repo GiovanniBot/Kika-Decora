@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const themeSchema = new mongoose.Schema({
-  id: { type: Number, required: true },
+  themeId: { type: String, required: true },
   topFive: { type: Boolean, required: true },
   newTheme: { type: Boolean, required: true },
   tag: { type: [String], required: true },

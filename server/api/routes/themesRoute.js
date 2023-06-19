@@ -3,7 +3,7 @@ const router = require("express").Router();
 const Theme = require("../models/Theme");
 
 router.post("/", async (req, res) => {
-  const { name, topFive, newTheme, tag, mainImg, imgs } = req.body;
+  const { themeId, name, topFive, newTheme, tag, mainImg, imgs } = req.body;
 
   if (
     name.length <= 0 ||
@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
   }
 
   const theme = {
+    themeId,
     name,
     topFive,
     newTheme,
@@ -53,11 +54,13 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
-  const id = req.params.id;
+router.get("/:themeId", async (req, res) => {
+  const themeId = req.params.themeId;
 
   try {
-    const doc = await Theme.findById(id);
+    const docs = await Theme.find();
+    const doc = docs.find((doc) => doc.themeId == themeId);
+
     if (!doc) {
       res.status(404).json({ error: "Error: Couldn't find the record." });
     }

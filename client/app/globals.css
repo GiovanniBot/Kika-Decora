@@ -4,19 +4,11 @@
 
 :root {
   --hero-color: #000235;
-  --background-color: #ffffff;
+  --bg-color: #ffffff;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
 body {
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
   overscroll-behavior-inline: contain;
 }
 

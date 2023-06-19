@@ -1,16 +1,25 @@
-import { Roboto } from 'next/font/google';
 import Image from 'next/image'
-import HeroButton from './components/Button/HeroButton'
 import Link from 'next/link';
-import { themes } from './data';
-
-const topFiveThemes = themes.filter((theme) => theme.topFive);
-const newThemes = themes.filter((theme) => theme.newTheme);
+import { Roboto } from 'next/font/google';
+import type { Metadata } from 'next'
+import HeroButton from './components/Button/HeroButton'
+import getAllThemes from '@/lib/getAllThemes';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"] });
 
+export const metadata: Metadata = {
+  title: 'Kika Decora - Home',
+}
 
-export default function Home() {
+export default async function Home() {
+  const themesData: Promise<Theme[]> = getAllThemes()
+
+  const themes = await themesData
+  console.log(themes)
+
+  const topFiveThemes = themes.filter((theme) => theme.topFive);
+  const newThemes = themes.filter((theme) => theme.newTheme);
+
   return (
     <main>
       <section className='home-hero grid grid-cols-12'>
@@ -89,7 +98,7 @@ export default function Home() {
         <div className='media-scroller col-start-1 col-end-13 w-full whitespace-nowrap md:pl-16 lg:pl-0 lg:justify-center auto-cols-[39%] lg:auto-cols-[14%]'>
 
           {topFiveThemes.map((theme) => (
-            <Link key={theme.id} href="/themes">
+            <Link key={theme.themeId} href={`/themes/${theme.themeId}`}>
               <div className='media-element'>
                 <Image
                   src={theme.mainImg}
@@ -121,7 +130,7 @@ export default function Home() {
         <div className='media-scroller col-start-1 col-end-13 w-full whitespace-nowrap md:pl-16 lg:pl-0 lg:justify-center auto-cols-[39%] lg:auto-cols-[14%]'>
 
           {newThemes.map((theme) => (
-            <Link key={theme.id} href="/themes">
+            <Link key={theme.themeId} href={`/themes/${theme.themeId}`}>
               <div className='media-element'>
                 <Image
                   src={theme.mainImg}
@@ -163,6 +172,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </main>
   )
 }
