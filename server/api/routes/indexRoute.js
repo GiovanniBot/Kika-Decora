@@ -1,21 +1,21 @@
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
+router.get("/api", (req, res) => {
   res.status(200).json({
     version: "1.0",
     message:
-      "Welcome to my RESTful API project. You can send a GET request to the endpoint /theme to see the DB schema pattern. Read the docs and have fun using this API!",
+      "Welcome to Kika Decora RESTful API project. Send a GET request to the endpoint api/themes to see the DB schema pattern. And read the docs!",
     endpoints: [
       {
-        path: "/theme",
+        path: "/api/themes",
         methods: ["GET", "POST", "PATCH", "DELETE"],
       },
       {
-        path: "/",
+        path: "/api",
         methods: "GET",
       },
     ],
-    documentation: "https://github.com/GiovanniBot/XXXXXXX"
+    //TODO: documentation: "https://github.com/GiovanniBot/XXXXXXX"
   });
 });
 
