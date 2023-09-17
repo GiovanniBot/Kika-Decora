@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
+import 'dotenv/config';
 
 const dbName = encodeURIComponent(process.env.DB_NAME);
 const dbUsername = encodeURIComponent(process.env.DB_USER);
@@ -7,7 +7,7 @@ const dbPassword = encodeURIComponent(process.env.DB_PW);
 
 
 if (dbUsername.trim().length === 0 && dbPassword.trim().length === 0) {
-    console.log("Error: Couldn't find dbUsername or dbPassword enviroment variables.")
+    console.log("Error: Couldn't find dbUsername or dbPassword enviroment variables.");
     process.exit(1);
 }
 
