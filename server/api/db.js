@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-import 'dotenv/config';
+require('dotenv').config({path: __dirname + '/.env'})
 
 const dbName = encodeURIComponent(process.env.DB_NAME);
 const dbUsername = encodeURIComponent(process.env.DB_USER);
