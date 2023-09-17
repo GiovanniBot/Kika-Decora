@@ -54,12 +54,8 @@ export default async function Themes() {
         <HeroSVGs/>
       </section>
 
-      <section className='mt-40 md:mt-6 grid grid-cols-12'>
-        <div className='col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 flex justify-between mb-3'>
-          <span className='col-start-2 col-span-2 font-semibold text-lg lg:text-2xl'>
-            Todos os Temas
-          </span>
-        </div>
+      <section className='w-[87%] xl:w-[80%] 2xl:w-[70%] mx-auto mt-36 md:mt-6 mb-4 xl:mb-6 2xl:mb-9'>
+        <p className='font-semibold text-lg lg:text-2xl'>Todos os Temas</p>
       </section>
 
       <ThemesList themes={themes}/>

@@ -1,6 +1,6 @@
 export default function HeroSVGs() {
   return (
-    <div className='col-start-1 col-span-12 svg-wrap'>
+    <div className='col-span-full svg-wrap'>
       <svg width="auto" height="140" xmlns="http://www.w3.org/2000/svg" version="1.1" className='md:hidden svg-mobile'>
         <g className="layer">
           <path d="m0,124l7.5,-1.5c7.5,-1.5 22.5,-4.5 37.5,-7.8c15,-3.4 30,-7 45,-10.7c15,-3.7 30,-7.3 45,-3.2c15,4.2 30,16.2 45,16.7c15,0.5 30,-10.5 45,-14.3c15,-3.9 30,-0.5 45,-0.4c15,0.2 30,-2.8 45,1.4c15,4.1 30,15.5 45,19.3c15,3.8 30,0.2 45,-3c15,-3.2 30,-5.8 37.5,-7.2l7.5,-1.3l0,-112l-7.5,0c-7.5,0 -22.5,0 -37.5,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -45,0c-15,0 -30,0 -37.5,0l-7.5,0l0,124z" fill="#4d4385" id="svg_2"/>

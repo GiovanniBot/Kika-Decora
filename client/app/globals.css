@@ -5,11 +5,16 @@
 :root {
   --hero-color: #000235;
   --bg-color: #ffffff;
+  --link-color: #8D85C9;
 }
 
 body {
   background-color: var(--bg-color);
   overscroll-behavior-inline: contain;
+}
+
+a {
+  color: var(--link-color);
 }
 
 header {
