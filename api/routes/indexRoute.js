@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-router.get("/api", (req, res) => {
+router.get("/", (req, res) => {
   res.status(200).json({
     version: "1.0",
     message:

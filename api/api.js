@@ -13,7 +13,7 @@ const indexRoute = require("./routes/indexRoute");
 const notFoundRoute = require("./routes/notFoundRoute");
 
 app.use("/api/themes", themesRoute);
-app.use("/", indexRoute);
+app.use("/api", indexRoute);
 app.use(notFoundRoute);
 
 connectToDb()
