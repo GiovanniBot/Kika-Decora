@@ -15,9 +15,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const themesData: Promise<Theme[]> = getAllThemes()
-
   const themes = await themesData
-  console.log(themes)
 
   const topFiveThemes = themes.filter((theme) => theme.topFive);
   const newThemes = themes.filter((theme) => theme.newTheme);

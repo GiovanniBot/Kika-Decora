@@ -31,16 +31,22 @@ export default async function Themes() {
           </div>
         </div>
 
-        <div className='col-start-7 col-end-13 lg:col-start-6 lg:col-end-11  mt-8 sm:mt-12 md:mt-20 lg:mt-16 xl:mt-24 2xl:mt-32  lg:flex lg:justify-end'>
+        <div className='col-start-7 col-end-13 lg:col-start-6 lg:col-end-11  mt-8 sm:mt-12 md:mt-20 lg:mt-14 xl:mt-23 2xl:mt-32  lg:flex lg:justify-end flex-wrap'>
           <span className="text-white text-[35px] md:text-[54px] lg:text-[50px] xl:text-[60px] 2xl:text-[84px] leading-none font-bold text-right">
             Selecione <br className='lg:hidden'/>O Tema <br className='hidden xl:inline-block'/>Da Festa 🎉
           </span>
+          
+          <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 lg:py-4 justify-between items-center text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0 hidden lg:flex lg:w-[90%] lg:h-12 lg:mt-8 xl:w-[80%] xl:h-14 2xl:w-[55%]`}>
+            <span className='ms-3'>Clique para escolher:</span>
+
+            <SelectTagDropdown themes={themes} />
+          </div>
         </div>
 
-        <div className='col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 mt-7 mb-2 bg-[#000235]'>
-          <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 lg:py-4 flex text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0`}>
-            <span className='ms-5'>Selecione o Tema da festa:</span>
-            
+        <div className='col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 mt-7 mb-2 bg-[#000235] lg:hidden'>
+          <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 lg:py-4 flex justify-between items-center text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0`}>
+            <span className='ms-3'>Selecione o Tema da festa:</span>
+
             <SelectTagDropdown themes={themes} />
           </div>
         </div>

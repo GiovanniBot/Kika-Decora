@@ -32,9 +32,9 @@ function SelectTagDropdown({ themes }) {
   };
 
   return (
-    <div>
-      <select value={selectedValue} onChange={handleSelectChange}>
-        <option value="">Selecione</option>
+    <div className='me-4'>
+      <select value={selectedValue} onChange={handleSelectChange} className='appearance-none bg-[#B3A3DE] rounded-md text-white border-solid border-[1px] border-white px-3 py-[1px] lg:py-[0px] xl:py-[1px] text-center pe-4'>
+        <option value="">▾ㅤSelecione</option> 
         {tags.map((tag) => (
           <option key={tag} value={tag}>
             {tag}

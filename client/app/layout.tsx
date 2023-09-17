@@ -6,7 +6,7 @@ import './globals.css'
 const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kika Mini Decora',
+  title: 'Kika Decora',
   description: 'XXXXXX',
 }
 
