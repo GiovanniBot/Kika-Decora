@@ -1,6 +1,6 @@
 export default async function getAllThemes() {
   try {
-    const res = await fetch('http://localhost:3003/api/themes/', { next: { revalidate: 43200 }});
+    const res = await fetch('https://kika-decor.onrender.com/api/themes/', { next: { revalidate: 30 }}); //43200
 
     if (!res.ok) {
       throw new Error('Failed to fetch themes data');
