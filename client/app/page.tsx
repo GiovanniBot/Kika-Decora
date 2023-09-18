@@ -30,8 +30,8 @@ export default async function Home() {
           <span className='hidden md:inline-block text-slate-400 text-lg mt-9 lg:mt-14 pe-28'>
             Com a Kika Decora você encontra os mais diversos temas para tornar sua festa única e incrível.
           </span>
-          <div className='pt-9 lg:pt-14'>
-            <HeroButton>
+          <div className='mt-9 lg:mt-14 w-[81%]'>
+            <HeroButton href={'/themes'}>
               Encontrar temas
             </HeroButton>
           </div>

@@ -3,18 +3,29 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-function ThemesList({ themes }) {
-  const [selectedTag, setSelectedTag] = useState('');
-  const [filteredThemes, setFilteredThemes] = useState(themes);
+interface Theme {
+  _id: string;
+  tag: string;
+  mainImg: string;
+  name: string;
+}
+
+interface ThemesListProps {
+  themes: Theme[];
+}
+
+function ThemesList({ themes }: ThemesListProps) {
+  const [selectedTag, setSelectedTag] = useState<string>('');
+  const [filteredThemes, setFilteredThemes] = useState<Theme[]>(themes);
 
   useEffect(() => {
     // Handle the custom event to update the selected tag
-    const handleTagChange = (event) => {
+    const handleTagChange = (event: CustomEvent) => {
       setSelectedTag(event.detail.tag);
     };
 
     // Listen for the custom event
-    window.addEventListener('tagChange', handleTagChange);
+    window.addEventListener('tagChange', handleTagChange as EventListener);
 
     // Filter themes based on the selected tag
     const filtered = themes.filter((theme) =>
@@ -24,7 +35,7 @@ function ThemesList({ themes }) {
 
     // Clean up the event listener
     return () => {
-      window.removeEventListener('tagChange', handleTagChange);
+      window.removeEventListener('tagChange', handleTagChange as EventListener);
     };
   }, [themes, selectedTag]);
 

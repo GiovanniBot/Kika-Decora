@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Outfit } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -21,9 +22,11 @@ export default function RootLayout({
 
         <header className='flex justify-center py-4 md:py-6 lg:py-7 border-collapse'>
           <div className="w-10/12 lg:w-8/12 flex justify-between">
-            <h2 className='text-white text-2xl mt-2'>
-              Kika Decora
-            </h2>
+            <Link href={`/`}>
+              <h2 className='text-white text-2xl mt-2'>
+                Kika Decora
+              </h2>
+            </Link>
             <a href="#">
               <Image
                   src="/WhatsApp.svg"
