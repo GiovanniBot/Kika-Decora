@@ -22,6 +22,8 @@ function SelectTagDropdown({ themes }: SelectTagDropdownProps) {
   }, [themes]);
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    e.target.options[0].text = 'Todos'
+
     const value = e.target.value;
     setSelectedValue(value);
 
