@@ -6,6 +6,7 @@ type Theme = {
   name: string;
   mainImg: string;
   imgs: {
+    _id: string;
     url: string;
   }[];
 };
