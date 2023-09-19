@@ -13,9 +13,7 @@ type Params = {
 }
 
 export default async function ThemePage({ params: { _id } }: Params) {
-  const themeData: Promise<Theme> = getTheme(_id)
-
-  const theme = await themeData
+  const themeData = await getTheme(_id);
 
   return (
     <main>
@@ -23,8 +21,8 @@ export default async function ThemePage({ params: { _id } }: Params) {
         <div className='col-start-2 col-end-12 xl:col-end-7 mx-auto'>
           <div className='mt-3 xl:me-3 2xl:me-0'>
             <Image
-              src={`${theme.mainImg}`}
-              alt={`${theme.name} main image.`}
+              src={`${themeData.mainImg}`}
+              alt={`${themeData.name} main image.`}
               width={500}
               height={500}
               priority={true}
@@ -36,7 +34,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
         {/* Mobile */}
         <div className='col-start-2 col-span-5 md:col-start-3 md:col-span-4 lg:col-start-4 lg:col-span-3 xl:col-start-8 xl:col-span-4 mt-7 mb-2 bg-[#000235] xl:hidden'>
           <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 xl:py-4 flex justify-between items-center text-start text-slate-300 text-xs md:text-sm xl:text-lg mb-0`}>
-            <p className='ms-2 me-1'><span className='font-semibold'>Tema:</span> {theme.name}</p>
+            <p className='ms-2 me-1'><span className='font-semibold'>Tema:</span> {themeData.name}</p>
           </div>
         </div>
 
@@ -50,7 +48,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
         <div className='col-start-7 col-span-5 mt-16 mb-2 bg-[#000235] hidden xl:inline-block'>
           <div className='grid-cols-2 flex flex-wrap text-white justify-between'>
             <div className={`${roboto.className} bg-[#4d4385] rounded-md py-4 flex justify-between items-center text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0 lg:col-auto w-[45%]`}>
-              <span className='ps-2 pe-1'><span className='font-semibold'>Tema:</span> {theme.name}</span>
+              <span className='ps-2 pe-1'><span className='font-semibold'>Tema:</span> {themeData.name}</span>
             </div>
             
             <div className='col-start-auto col-span-auto col-auto flex justify-center items-center w-[50%]'>
@@ -72,7 +70,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
 
       <section className='w-[87%] xl:w-[80%] 2xl:w-[70%] mx-auto mt-36 md:mt-6 mb-4 xl:mb-6 2xl:mb-9 text-center'>
         <p className='font-semibold text-lg lg:text-2xl'>Detalhes</p>
-        <p className='text-slate-400 text-sm lg:text-lg mt-2'>Aqui você encontra todos os detalhes do tema {theme.name}.</p>
+        <p className='text-slate-400 text-sm lg:text-lg mt-2'>Aqui você encontra todos os detalhes do tema {themeData.name}.</p>
       </section>
     </main>
   )

@@ -1,4 +1,6 @@
-export default async function getAllThemes() {
+import Theme from "@/app/types/Theme";
+
+export default async function getAllThemes(): Promise<Theme[]> {
   try {
     const res = await fetch('https://kika-decor.onrender.com/api/themes/', { next: { revalidate: 30 }}); //43200
 

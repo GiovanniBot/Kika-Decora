@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Themes() {
-  const themesData: Promise<Theme[]> = getAllThemes()
-  const themes = await themesData
+  const themesData = await getAllThemes();
 
   return (
     <main>
@@ -39,7 +38,7 @@ export default async function Themes() {
           <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 lg:py-4 justify-between items-center text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0 hidden lg:flex lg:w-[90%] lg:h-12 lg:mt-8 xl:w-[80%] xl:h-14 2xl:w-[55%]`}>
             <span className='ms-3'>Clique para escolher:</span>
 
-            <SelectTagDropdown themes={themes} />
+            <SelectTagDropdown themes={themesData} />
           </div>
         </div>
 
@@ -47,7 +46,7 @@ export default async function Themes() {
           <div className={`${roboto.className} bg-[#4d4385] rounded-md py-3 lg:py-4 flex justify-between items-center text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0`}>
             <span className='ms-3'>Selecione o Tema da festa:</span>
 
-            <SelectTagDropdown themes={themes} />
+            <SelectTagDropdown themes={themesData} />
           </div>
         </div>
 
@@ -58,7 +57,7 @@ export default async function Themes() {
         <p className='font-semibold text-lg lg:text-2xl'>Todos os Temas</p>
       </section>
 
-      <ThemesList themes={themes}/>
+      <ThemesList themes={themesData}/>
     </main>
   )
 }

@@ -14,11 +14,10 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  const themesData: Promise<Theme[]> = getAllThemes()
-  const themes = await themesData
+  const themesData = await getAllThemes();
 
-  const topFiveThemes = themes.filter((theme) => theme.topFive);
-  const newThemes = themes.filter((theme) => theme.newTheme);
+  const topFiveThemes = themesData.filter((theme) => theme.topFive);
+  const newThemes = themesData.filter((theme) => theme.newTheme);
 
   return (
     <main>

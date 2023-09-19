@@ -1,10 +1,11 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import Theme from '../types/Theme';
 
-interface Theme {
-  tag: string;
-}
+// interface Theme {
+//   tag: string;
+// }
 
 interface SelectTagDropdownProps {
   themes: Theme[];

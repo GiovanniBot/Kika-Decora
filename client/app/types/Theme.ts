@@ -9,3 +9,5 @@ type Theme = {
     url: string;
   }[];
 };
+
+export default Theme;

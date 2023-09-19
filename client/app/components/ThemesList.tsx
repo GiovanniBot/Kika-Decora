@@ -2,13 +2,14 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Theme from '../types/Theme';
 
-interface Theme {
-  _id: string;
-  tag: string;
-  mainImg: string;
-  name: string;
-}
+// interface Theme {
+//   _id: string;
+//   tag: string;
+//   mainImg: string;
+//   name: string;
+// }
 
 interface ThemesListProps {
   themes: Theme[];
