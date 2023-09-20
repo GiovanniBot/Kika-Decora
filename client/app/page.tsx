@@ -147,7 +147,7 @@ export default async function Home() {
               height={500}
             />
           </div>
-          <div className='basis-full md:basis-2/5 md:pl-6 text-sm lg:text-xl lg:mt-3'>
+          <div className='basis-full md:basis-2/5 md:pl-6 text-sm lg:text-lg xl:text-xl lg:mt-3'>
             <p><span className='font-semibold'>Local:</span> Rua exemplo, Madre de deus, n 1369.</p>
             <p><span className='font-semibold'>WhatsApp:</span> (71) 9XXXX-XXXX</p>
             <p><span className='font-semibold'>E-mail:</span> exemplo@exemplo.com</p>
