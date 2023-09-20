@@ -33,7 +33,7 @@ export default function RootLayout({
             
             <div className='hidden lg:flex items-center text-lg'>
               <DesktopNav />
-              <a href="https://api.whatsapp.com/send?phone=5571996337259">
+              <a href="https://api.whatsapp.com/send?phone=5571996337259" target='blank'>
                 <Image
                   src="/WhatsApp.svg"
                   alt="WhatsApp Logo"
@@ -57,7 +57,7 @@ export default function RootLayout({
             </p>
             <div className=' text-xs/4 row-span-1 row-start-3 pt-0'>
               <p className='text-[#666666]'>2023 © Kika Mini Decora</p>
-              <a href="https://api.whatsapp.com/send?phone=5571996337259" className='text'><span className='text-[#666666]'>Desenvolvido por </span>Giovanni Almeida.</a>
+              <a href="https://api.whatsapp.com/send?phone=5571996337259" target='blank' className='text'><span className='text-[#666666]'>Desenvolvido por </span>Giovanni Almeida.</a>
             </div>
           </div>
         </section>
@@ -74,7 +74,7 @@ export default function RootLayout({
           </div>
         </footer>
         <div className='py-3 bg-[#111648] text-center text-md hidden lg:block'>
-          <a href="https://api.whatsapp.com/send?phone=5571996337259">Desenvolvido por Giovanni Almeida</a>
+          <a href="https://api.whatsapp.com/send?phone=5571996337259" target='blank'>Desenvolvido por Giovanni Almeida</a>
         </div>
       </body>
     </html>
