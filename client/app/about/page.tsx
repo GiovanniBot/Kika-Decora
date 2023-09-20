@@ -3,8 +3,13 @@ import HeroSVGs from '@/app/components/HeroSVGs';
 import { Roboto } from 'next/font/google';
 import HeroButton from '@/app/components/HeroButton';
 import MapsSection from '../components/MapsSection';
+import type { Metadata } from 'next'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"] });
+
+export const metadata: Metadata = {
+  title: 'Kika Decora - Sobre nós',
+}
 
 export default async function AboutPage() {
 

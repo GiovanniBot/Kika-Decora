@@ -74,7 +74,7 @@ header {
 .mobile-nav-active {
   border: #d8d7d6 1px solid;
   background-color: #999ce1!important;
-  box-shadow: #111 0px 3px 5px;
+  box-shadow: #171b4f 0px 2px 4px;
 }
 .bg-navbar-mobile {
   backdrop-filter: blur(3px);

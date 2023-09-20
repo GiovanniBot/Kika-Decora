@@ -3,8 +3,13 @@ import Image from 'next/image';
 import HeroSVGs from '@/app/components/HeroSVGs';
 import { Roboto } from 'next/font/google';
 import HeroButton from '@/app/components/HeroButton';
+import type { Metadata } from 'next'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"] });
+
+export const metadata: Metadata = {
+  title: 'Kika Decora - Detalhes do Tema',
+}
 
 type Params = {
   params: {
@@ -39,7 +44,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
         </div>
 
         <div className='col-start-7 col-span-6 lg:col-start-7 lg:col-span-4 mt-5 w-[90%] flex justify-center items-center xl:hidden'>
-          <HeroButton href={'/'}>
+          <HeroButton href={`https://api.whatsapp.com/send?phone=5571996337259&text=Olá,%20tenho%20interesse%20no%20tema%20${themeData.name}.`}>
             Quero esse tema
           </HeroButton>
         </div>
@@ -53,7 +58,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
             
             <div className='col-start-auto col-span-auto col-auto flex justify-center items-center w-[50%]'>
               <div className='w-[90%] lg:w-[100%]'>
-                <HeroButton href={'/'}>
+                <HeroButton href={`https://api.whatsapp.com/send?phone=5571996337259&text=Olá,%20tenho%20interesse%20no%20tema%20${themeData.name}.`}>
                   Quero esse tema
                 </HeroButton>
               </div>
@@ -90,7 +95,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
 
         <div className='col-start-auto col-span-auto col-auto mt-[35px] flex justify-center items-center w-[50%] mx-auto'>
           <div className='w-[90%] lg:w-[100%]'>
-            <HeroButton href={'/'} customClassName={'bg-[#4D4385] px-5'}>
+            <HeroButton href={`https://api.whatsapp.com/send?phone=5571996337259&text=Olá,%20tenho%20interesse%20no%20tema%20${themeData.name}.`} customClassName={'bg-[#4D4385] px-5'}>
               Quero esse tema
             </HeroButton>
           </div>

@@ -87,7 +87,7 @@ export default async function Home() {
                   alt={theme.name}
                   width={150}
                   height={150}
-                  className='rounded-md'
+                  className='rounded-sm md:rounded-md'
                 />
 
                 <p className='text-xs md:text-lg ms-2'>
@@ -121,7 +121,7 @@ export default async function Home() {
                   alt={theme.name}
                   width={150}
                   height={150}
-                  className='rounded-md'
+                  className='rounded-sm md:rounded-md'
                 />
 
                 <p className='text-xs md:text-lg ms-2'>
