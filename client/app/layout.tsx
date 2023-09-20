@@ -4,6 +4,7 @@ import { Outfit } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
 import MobileNav from './components/MobileNav'
+import HeroSVGs from './components/HeroSVGs'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -56,7 +57,10 @@ export default function RootLayout({
           </div>
         </section>
 
-        <footer className='hidden lg:inline-block pb-36 text-white text-center bg-[#000235] rounded-t-3xl w-full'>
+        <div className='rotate-180 hidden lg:block'>
+         <HeroSVGs />
+        </div>
+        <footer className='hidden lg:inline-block pb-36 text-white text-center bg-[#000235] w-full'>
           Desktop Footer Placeholder
         </footer>
 

@@ -1,9 +1,9 @@
-'use client'
+'use client';
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
 
-export default function HeroSVGs() {
+export default function MobileNav() {
   const currentPathname = usePathname();
 
   const isActive = (href: string) => {
@@ -12,10 +12,12 @@ export default function HeroSVGs() {
 
   return (
     <main>
-      <div className='text-transparent fixed bottom-0 w-full h-[65px] bg-[#4D4385] z-10 lg:hidden'>placeholder</div>
+      <div className="w-full flex flex-wrap justify-center">
+        <div className='bg-navbar-mobile text-transparent fixed bottom-1 w-[90%] md:w-[60%] h-[63px] bg-[#4d4385f7] z-10 lg:hidden rounded-full'>placeholder</div>
+      </div>
       <menu className='fixed bottom-0 w-full z-20 lg:hidden'>
-        <ul className='flex justify-center h-[78px] border-collapse'>
-          <li className={`absolute w-[72px] h-[72px] left-9 md:left-44 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 ${isActive('/') ? 'mobile-nav-active' : ''}`}>
+        <ul className='flex justify-center h-[75px] border-collapse'>
+          <li className={`absolute w-[68px] h-[68px] left-9 md:left-48 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 border-[1px] border-[#453c78] ${isActive('/') ? 'mobile-nav-active' : ''}`}>
             <Link href={`/`}>
               <span className='text-white text-sm/8 font-extralight'>
                 <Image
@@ -29,7 +31,7 @@ export default function HeroSVGs() {
               </span>
             </Link>
           </li>
-          <li className={`absolute w-[72px] h-[72px] center-0 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 ${isActive('/themes') ? 'mobile-nav-active' : ''}`}>
+          <li className={`absolute w-[68px] h-[68px] center-0 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 border-[1px] border-[#453c78] ${isActive('/themes') ? 'mobile-nav-active' : ''}`}>
             <Link href={`/themes`}>
               <span className='text-white text-sm/8 font-extralight'>
                 <Image
@@ -43,7 +45,7 @@ export default function HeroSVGs() {
               </span>
             </Link>
           </li>
-          <li className={`absolute w-[72px] h-[72px] right-9 md:right-44 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 ${isActive('/about') ? 'mobile-nav-active' : ''}`}>
+          <li className={`absolute w-[68px] h-[68px] right-9 md:right-48 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 border-[1px] border-[#453c78] ${isActive('/about') ? 'mobile-nav-active' : ''}`}>
             <Link href={`/about`}>
               <span className='text-white text-sm/8 font-extralight'>
                 <Image

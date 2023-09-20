@@ -2,6 +2,7 @@ import Image from 'next/image';
 import HeroSVGs from '@/app/components/HeroSVGs';
 import { Roboto } from 'next/font/google';
 import HeroButton from '@/app/components/HeroButton';
+import MapsSection from '../components/MapsSection';
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"] });
 
@@ -56,7 +57,7 @@ export default async function AboutPage() {
 
       <section className='w-[80%] xl:w-[66%] 2xl:w-[66%] mx-auto mt-36 md:mt-6 mb-4 xl:mb-6 2xl:mb-9 text-center'>
         <p className='font-semibold text-lg lg:text-2xl'>Sobre nós</p>
-        <p className='text-sm/4 mt-5 lg:mt-8 text-justify'><b>Kika Mini Decora</b> - O seu parceiro para festas inesquecíveis</p>
+        <p className='text-sm/4 mt-5 lg:mt-8 text-justify'><b>Kika Mini Decora</b> - O seu parceiro para festas inesquecíveis.</p>
         <p className='text-sm/4 mt-4 text-justify'>A Kika Mini Decora é uma empresa de aluguel de itens de festa com 5 anos de experiência. Oferecemos uma variedade de opções, como painéis temáticos, móveis provençais, trio de cilindros e mezanino e painel redondo.</p>
         <p className='text-sm/4 mt-4 text-justify'>Nossos serviços incluem entrega e montagem dos itens alugados, garantindo praticidade e economia para os clientes. Além disso, oferecemos pacotes personalizados para atender a diferentes tipos de eventos.</p>
         <p className='text-sm/4 mt-4 text-justify'>Priorizamos a qualidade e higiene dos nossos itens de festa, que passam por rigorosos processos de higienização e são feitos com materiais de ponta.</p>
@@ -69,29 +70,7 @@ export default async function AboutPage() {
         <p className='text-sm/4 mt-4 text-justify'>Confie na Kika Mini Decora para tornar sua festa inesquecível. Entre em contato hoje mesmo para mais informações e reservas.</p>
       </section>
 
-      <section className='mt-7 lg:mt-16 grid grid-cols-12'>
-        <p className='col-start-2 lg:col-start-3 col-span-8 font-semibold text-lg lg:text-2xl mb-3 lg:mb-6'>
-          Onde nos encontrar
-        </p>
-
-        <div className='col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 flex flex-wrap md:flex-row'>
-          <div className='basis-full md:basis-3/5 mb-3'>
-            <Image
-              className='w-full'
-              src="/maps.png"
-              alt="Mapa"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className='basis-full md:basis-2/5 md:pl-6 text-sm lg:text-lg xl:text-xl lg:mt-3'>
-            <p><span className='font-semibold'>Local:</span> Rua exemplo, Madre de deus, n 1369.</p>
-            <p><span className='font-semibold'>WhatsApp:</span> (71) 9XXXX-XXXX</p>
-            <p><span className='font-semibold'>E-mail:</span> exemplo@exemplo.com</p>
-            <p><span className='font-semibold'>Instagram:</span> @kika_mini_decora</p>
-          </div>
-        </div>
-      </section>
+      <MapsSection />
         
     </main>
   )

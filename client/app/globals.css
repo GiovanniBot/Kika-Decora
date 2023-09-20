@@ -75,3 +75,6 @@ header {
   border: #ffffff 1px solid;
   background-color: #7C69B6!important;
 }
+.bg-navbar-mobile {
+  backdrop-filter: blur(3px);
+}
