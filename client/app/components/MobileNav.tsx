@@ -12,9 +12,9 @@ export default function HeroSVGs() {
 
   return (
     <main>
-      <div className='text-transparent fixed bottom-0 w-full h-[71px] bg-[#4D4385] z-10 lg:hidden'>placeholder</div>
+      <div className='text-transparent fixed bottom-0 w-full h-[65px] bg-[#4D4385] z-10 lg:hidden'>placeholder</div>
       <menu className='fixed bottom-0 w-full z-20 lg:hidden'>
-        <ul className='flex justify-center h-[90px] border-collapse'>
+        <ul className='flex justify-center h-[78px] border-collapse'>
           <li className={`absolute w-[72px] h-[72px] left-9 md:left-44 top-0 mx-6 rounded-full bg-[#4D4385] flex flex-wrap justify-center items-end pb-1 ${isActive('/') ? 'mobile-nav-active' : ''}`}>
             <Link href={`/`}>
               <span className='text-white text-sm/8 font-extralight'>
