@@ -23,8 +23,8 @@ export default function MobileNav() {
                 <Image
                   src="/home.svg"
                   alt='Ícone de uma casa.'
-                  width={24}
-                  height={24}
+                  width={22}
+                  height={22}
                   className='mx-auto'
                 />
                 início
@@ -37,8 +37,8 @@ export default function MobileNav() {
                 <Image
                   src="/themes.svg"
                   alt='Ícone de uma paleta de cores.'
-                  width={24}
-                  height={24}
+                  width={22}
+                  height={22}
                   className='mx-auto'
                 />
                 temas
@@ -51,8 +51,8 @@ export default function MobileNav() {
                 <Image
                   src="/about.svg"
                   alt='Ícone de pessoas.'
-                  width={24}
-                  height={24}
+                  width={22}
+                  height={22}
                   className='mx-auto'
                 />
                 sobre

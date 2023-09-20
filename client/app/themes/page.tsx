@@ -44,7 +44,7 @@ export default async function Themes() {
         </div>
 
         {/* Mobile */}
-        <div className='col-start-2 col-span-10 md:col-start-3 md:col-span-8 lg:col-start-3 lg:col-span-8 mt-7 md:mt-9 mb-2 bg-[#000235] lg:hidden'>
+        <div className='col-start-2 col-span-10 md:col-start-3 md:col-span-8 lg:col-start-3 lg:col-span-8 mt-7 md:mt-9 mb-1 bg-[#000235] lg:hidden'>
           <div className={`${roboto.className} bg-[#4d4385] rounded-md py-2 lg:py-4 flex justify-between items-center text-start text-slate-300 text-xs md:text-sm lg:text-lg mb-0`}>
             <span className='ms-3'>Selecione o Tema da festa:</span>
 

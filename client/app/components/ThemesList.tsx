@@ -4,12 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Theme from '../types/Theme';
 
-// interface Theme {
-//   _id: string;
-//   tag: string;
-//   mainImg: string;
-//   name: string;
-// }
 
 interface ThemesListProps {
   themes: Theme[];
@@ -41,7 +35,7 @@ function ThemesList({ themes }: ThemesListProps) {
   }, [themes, selectedTag]);
 
   return (
-    <div className='w-[87%] xl:w-[80%] 2xl:w-[70%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 lg:mt-6'>
+    <div className='w-[87%] xl:w-[80%] 2xl:w-[70%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 lg:mt-6 lg:mb-9'>
       {filteredThemes.map((theme) => (
         <Link key={theme._id} href={`/themes/${theme._id}`}>
           <div className='media-element ms-3 me-3 mb-8'>
@@ -50,6 +44,7 @@ function ThemesList({ themes }: ThemesListProps) {
               alt={theme.name}
               width={150}
               height={150}
+              className='rounded-t-md'
             />
 
             <p className='text-xs md:text-lg ms-2 my-1'>

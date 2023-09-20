@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import MobileNav from './components/MobileNav'
 import HeroSVGs from './components/HeroSVGs'
+import DesktopNav from './components/DesktopNav'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
@@ -30,7 +31,10 @@ export default function RootLayout({
                 Kika Decora
               </h2>
             </Link>
-            <a href="#">
+            
+            <div className='hidden lg:flex items-center text-lg'>
+              <DesktopNav />
+              <a href="#">
               <Image
                   src="/WhatsApp.svg"
                   alt="WhatsApp Logo"
@@ -38,6 +42,8 @@ export default function RootLayout({
                   height={66}
                 />
             </a>
+            </div>
+            
           </div>
         </header>
 
@@ -60,10 +66,17 @@ export default function RootLayout({
         <div className='rotate-180 hidden lg:block'>
          <HeroSVGs />
         </div>
-        <footer className='hidden lg:inline-block pb-36 text-white text-center bg-[#000235] w-full'>
-          Desktop Footer Placeholder
+        <footer className='bg-[#111648]'>
+          <div className='hidden lg:flex flex-wrap justify-around align-middle bg-[#000235] pb-10 pt-4 rounded-b-2xl text-lg'>
+            <span className='text-white'>
+              2023 © Kika Mini Decora
+            </span>
+            <DesktopNav />
+          </div>
         </footer>
-
+        <div className='py-3 bg-[#111648] text-center text-md hidden lg:block'>
+          <a href="#">Desenvolvido por Giovanni Almeida</a>
+        </div>
       </body>
     </html>
   )

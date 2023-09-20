@@ -61,7 +61,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
           </div>
 
           <div className='hidden md:inline-block text-slate-400 text-lg mt-9 lg:mt-14 pe-28'>
-            Com a Kika Decora você encontra os mais diversos temas para tornar sua festa única e incrível.
+            Clicar em "Quero Esse Tema" te redicionará para nosso chat WhatsApp com o tema desejado automaticamente. Conte com a Kika Decora para tornar sua festa incrível!
           </div>
         </div>
       </section>
@@ -70,10 +70,10 @@ export default async function ThemePage({ params: { _id } }: Params) {
 
       <section className='w-[80%] xl:w-[66%] 2xl:w-[66%] mx-auto mt-36 md:mt-6 mb-4 xl:mb-6 2xl:mb-9 text-center'>
         <p className='font-semibold text-lg lg:text-2xl'>Detalhes</p>
-        <p className='text-slate-400 text-xs lg:text-lg mt-2 hidden lg:inline-block'>Aqui você encontra todos os detalhes do tema {themeData.name}.</p>
-        <p className='text-sm/4 mt-5 lg:mt-9 text-justify'>O Kit é composto por todos os itens da foto, <b>COM EXCEÇÃO</b> dos doces personalizados, lembrancinhas personalizadas e balões.</p>
+        <p className='text-slate-400 text-xs lg:text-lg mt-2 hidden lg:inline-block'>Aqui você encontra todos os detalhes sobre o aluguel do tema {themeData.name}.</p>
+        <p className='text-sm/4 lg:text-lg mt-5 lg:mt-12 text-justify'>O Kit é composto por todos os itens da foto, <b>COM EXCEÇÃO</b> dos doces personalizados, lembrancinhas personalizadas e balões.</p>
         <p className='text-xs mt-5 lg:mt-9 text-start font-bold uppercase'>Importante:</p>
-        <ul className='w-[87%] lg:w-[93%] xl:w-[93%] text-start text-sm/4 mx-auto list-disc'>
+        <ul className='w-[87%] lg:w-[93%] xl:w-[93%] text-start text-sm/4 lg:text-lg mx-auto list-disc'>
           <li className='mt-1'>Os móveis são montados e desmontados por nós;</li>
           <li className='mt-1'>O aluguel será realizado mediante assinatura de contrato;</li>
           <li className='mt-1'>As cores podem ser substituídas pela cor de sua preferência;</li>
@@ -81,7 +81,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
           <li className='mt-1'>Frete não incluso no valor.</li>
         </ul>
         <p className='text-xs mt-5 lg:mt-9 text-start font-bold uppercase'>Medidas:</p>
-        <ul className='text-start text-sm/4 mx-auto'>
+        <ul className='text-start text-sm/4 lg:text-lg mx-auto'>
           <li className='mt-1'>Altura: 000,00 cm</li>
           <li className='mt-1'>Largura: 000,00 cm</li>
           <li className='mt-1'>Comprimento: 000,00 cm</li>
