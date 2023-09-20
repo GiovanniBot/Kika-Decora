@@ -48,7 +48,7 @@ function SelectTagDropdown({ themes }: SelectTagDropdownProps) {
       <select
         value={selectedValue}
         onChange={handleSelectChange}
-        className='appearance-none bg-[#B3A3DE] rounded-md text-white border-solid border-[1px] border-white px-3 py-[1px] lg:py-[0px] xl:py-[1px] text-center pe-4'
+        className='appearance-none bg-[#B3A3DE] rounded-md text-white border-solid border-[1px] border-white px-6 py-[3px] lg:py-[0px] lg:px-3 xl:py-[1px] text-center'
       >
         <option value="">▾ Selecione</option>
         {tags.map((tag) => (

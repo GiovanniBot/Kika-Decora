@@ -70,3 +70,8 @@ header {
   text-align: left;
   color: #000;
 }
+
+.mobile-nav-active {
+  border: #ffffff 1px solid;
+  background-color: #7C69B6!important;
+}

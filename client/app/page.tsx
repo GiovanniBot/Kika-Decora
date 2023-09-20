@@ -62,9 +62,9 @@ export default async function Home() {
             <span className='hidden md:inline-block'>Painel Redondo</span>
           </div>
         </div>
-
-        <HeroSVGs/>
       </section>
+
+      <HeroSVGs/>
 
       <section className='mt-40 md:mt-6 grid grid-cols-12'>
         <div className='col-start-2 col-span-10 lg:col-start-3 lg:col-span-8 flex justify-between mb-3'>
