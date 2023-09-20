@@ -35,7 +35,7 @@ function ThemesList({ themes }: ThemesListProps) {
   }, [themes, selectedTag]);
 
   return (
-    <div className='w-[87%] xl:w-[80%] 2xl:w-[70%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 lg:mt-6 lg:mb-9'>
+    <div className='w-[87%] xl:w-[80%] 2xl:w-[70%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 lg:mt-6 lg:mb-8'>
       {filteredThemes.map((theme) => (
         <Link key={theme._id} href={`/themes/${theme._id}`}>
           <div className='media-element ms-3 me-3 mb-8'>

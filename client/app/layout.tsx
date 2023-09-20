@@ -57,24 +57,24 @@ export default function RootLayout({
             </p>
             <div className=' text-xs/4 row-span-1 row-start-3 pt-0'>
               <p className='text-[#666666]'>2023 © Kika Mini Decora</p>
-              <a href="https://api.whatsapp.com/send?phone=5571996337259" target='blank' className='text'><span className='text-[#666666]'>Desenvolvido por </span>Giovanni Almeida.</a>
+              <a href="https://linktr.ee/GiovanniAlmeida" target='blank' className='text'><span className='text-[#666666]'>Desenvolvido por </span>Giovanni Almeida.</a>
             </div>
           </div>
         </section>
 
-        <div className='rotate-180 hidden lg:block'>
+        <div className='rotate-180 hidden lg:block my-0 py-0'>
          <HeroSVGs />
         </div>
         <footer className='bg-[#111648]'>
-          <div className='hidden lg:flex flex-wrap justify-around align-middle bg-[#000235] pb-10 pt-4 rounded-b-2xl text-lg'>
+          <div className='hidden lg:flex flex-wrap justify-around align-middle bg-[#000235] pb-10 pt-4 rounded-b-2xl text-lg my-0 py-0'>
             <span className='text-white'>
               2023 © Kika Mini Decora
             </span>
             <DesktopNav />
           </div>
         </footer>
-        <div className='py-3 bg-[#111648] text-center text-md hidden lg:block'>
-          <a href="https://api.whatsapp.com/send?phone=5571996337259" target='blank'>Desenvolvido por Giovanni Almeida</a>
+        <div className='py-3 my-0 bg-[#111648] text-center text-md hidden lg:block'>
+          <a href="https://linktr.ee/GiovanniAlmeida" target='blank'>Desenvolvido por Giovanni Almeida</a>
         </div>
       </body>
     </html>

@@ -22,8 +22,7 @@ export default function HeroSVGs() {
         </div>
         <div className="basis-full md:basis-2/5 md:pl-6 text-sm lg:text-lg xl:text-xl lg:mt-3">
           <p>
-            <span className="font-semibold">Local:</span> Rua Tancredo Neves, Madre de
-            Deus, n.º144 - BA, 42600-000
+            <span className="font-semibold">Local:</span> Rua Tancredo Neves, Madre de Deus, n.º144 - BA, 42600-000
           </p>
           <p>
             <span className="font-semibold">WhatsApp:</span> (71) 9XXXX-XXXX

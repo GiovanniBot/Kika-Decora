@@ -23,7 +23,7 @@ export default async function AboutPage() {
           <span className='hidden md:inline-block text-slate-400 text-lg mt-9 lg:mt-14 pe-28'>
             Saiba mais sobre a Kika Decora e como podemos te ajudar a ter a festa dos seus sonhos.
           </span>
-          <div className='mt-9 lg:mt-14 w-[81%]'>
+          <div className='mt-9 lg:mt-14 w-[81%] mb-1'>
             <HeroButton href={'/themes'}>
               Encontrar temas
             </HeroButton>

@@ -27,6 +27,7 @@ header {
 
 .svg-wrap {
   position: relative;
+  top: -1px;
 }
 .svg-mobile {
   top: -3px;
