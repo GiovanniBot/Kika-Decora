@@ -72,10 +72,11 @@ header {
 }
 
 .mobile-nav-active {
-  border: #d8d7d6 1px solid;
+  /* border: #d8d7d6 1px solid; */
+  border: none;
   background-color: #999ce1!important;
-  box-shadow: #171b4f 0px 2px 4px;
+  box-shadow: #53557c 0px 2px 4px;
 }
 .bg-navbar-mobile {
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px);
 }
