@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSVGs() {
   return (
-    <section className='mt-12 lg:mt-24 grid grid-cols-12 lg:mb-20'>
+    <section className='mt-12 lg:mt-24 grid grid-cols-12 mb-12 lg:mb-16'>
       <p className='col-start-2 lg:col-start-3 col-span-8 font-semibold text-lg lg:text-2xl mb-3 lg:mb-6'>
         Onde nos encontrar
       </p>
