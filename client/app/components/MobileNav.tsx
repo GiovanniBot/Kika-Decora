@@ -39,7 +39,7 @@ export default function HeroSVGs() {
                   height={24}
                   className='mx-auto'
                 />
-                Temas
+                temas
               </span>
             </Link>
           </li>
@@ -53,7 +53,7 @@ export default function HeroSVGs() {
                   height={24}
                   className='mx-auto'
                 />
-                Sobre
+                sobre
               </span>
             </Link>
           </li>
