@@ -24,20 +24,24 @@ Bem-vindo ao Kika Decora Web App. Esta Web App permite aos clientes explorar e d
 
 ### Smartphone
 
-![home-mobile](https://github.com/GiovanniBot/kika-decor/assets/69661645/202dd061-e4f2-4fc9-a79d-fc9805d1e89a)
-![tema-detail-tablet](https://github.com/GiovanniBot/kika-decor/assets/69661645/0bf30ed9-4325-4f5a-ad8c-9628a1a71fc0)
+<p align="center">
+  <img src="https://github.com/GiovanniBot/kika-decor/assets/69661645/202dd061-e4f2-4fc9-a79d-fc9805d1e89a" alt="Mobile screeshot" width="250" />
+  <img src="https://github.com/GiovanniBot/kika-decor/assets/69661645/beeffe89-3833-4642-b237-dd60c191193b" alt="Mobile screeshot" width="250" />
+</p>
 
 ### Desktop
 
-![tema-detail-desktop](https://github.com/GiovanniBot/kika-decor/assets/69661645/e3c781b7-7cda-4609-9a07-4481a3b04b42)
-![home-desktop](https://github.com/GiovanniBot/kika-decor/assets/69661645/6af96968-0f0d-4e16-8bf2-01f1d859235e)
-
+<p align="center">
+  <img src="https://github.com/GiovanniBot/kika-decor/assets/69661645/e3c781b7-7cda-4609-9a07-4481a3b04b42" alt="Mobile screeshot" width="500" />
+  <img src="https://github.com/GiovanniBot/kika-decor/assets/69661645/6af96968-0f0d-4e16-8bf2-01f1d859235e" alt="Mobile screeshot" width="500" />
+</p>
 
 ### Tablet
 
-![tema-detail-tablet](https://github.com/GiovanniBot/kika-decor/assets/69661645/d6e2de72-e929-409d-bed9-7168078d9cb2)
-![sobre-tablet](https://github.com/GiovanniBot/kika-decor/assets/69661645/ec1fc34a-c10a-442b-8120-3bc40a8063b3)
-
+<p align="center">
+  <img src="https://github.com/GiovanniBot/kika-decor/assets/69661645/d6e2de72-e929-409d-bed9-7168078d9cb2" alt="Mobile screeshot" width="400" />
+  <img src="https://github.com/GiovanniBot/kika-decor/assets/69661645/ec1fc34a-c10a-442b-8120-3bc40a8063b3" alt="Mobile screeshot" width="400" />
+</p>
 
 ## Estrutura do Repositório
 
