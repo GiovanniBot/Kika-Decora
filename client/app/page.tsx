@@ -39,10 +39,11 @@ export default async function Home() {
         <div className='col-start-8 col-span-12'>
           <div className='mt-1 md:mt-4'>
             <Image 
-              src="/calendar.svg"
+              src="/calendar.png?cache1"
               alt="Illustration of a man dancing and a calendar."
               width={450}
               height={450}
+              quality={100}
               priority={true} // Lazy loading is automatically disabled for images using priority.
               className='lg:w-[80%] xl:w-[66%] 2xl:w-[57%]'
             />
@@ -87,6 +88,7 @@ export default async function Home() {
                   alt={theme.name}
                   width={150}
                   height={150}
+                  loading="lazy"
                   className='rounded-sm md:rounded-md'
                 />
 
@@ -121,6 +123,7 @@ export default async function Home() {
                   alt={theme.name}
                   width={150}
                   height={150}
+                  loading="lazy"
                   className='rounded-sm md:rounded-md'
                 />
 

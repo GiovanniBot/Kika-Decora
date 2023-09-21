@@ -21,10 +21,11 @@ export default async function Themes() {
         <div className='col-start-1 col-end-7 sm:col-start-2 lg:col-start-3 lg:col-end-6 ms-2 me-1 md:me-4'>
           <div className='mt-1 md:mt-4'>
             <Image 
-              src="/smartphone.svg"
+              src="/smartphone.png"
               alt="Illustration of a smartphone and a check mark."
               width={500}
               height={500}
+              quality={100}
               priority={true}
             />
           </div>

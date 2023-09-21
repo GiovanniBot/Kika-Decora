@@ -30,6 +30,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
               alt={`${themeData.name} main image.`}
               width={600}
               height={600}
+              quality={100}
               priority={true}
               className='rounded-md aspect-video object-cover'
             />
@@ -112,6 +113,7 @@ export default async function ThemePage({ params: { _id } }: Params) {
                 alt={themeData.name}
                 width={400}
                 height={400}
+                loading='lazy'
                 className='rounded-md aspect-video object-cover'
               />
             </div>

@@ -33,10 +33,11 @@ export default async function AboutPage() {
         <div className='col-start-8 col-span-12'>
           <div className='mt-1 md:mt-4'>
             <Image 
-              src="/calendar.svg"
+              src="/calendar.png?cache1"
               alt="Illustration of a man dancing and a calendar."
               width={450}
               height={450}
+              quality={100}
               priority={true}
             />
           </div>

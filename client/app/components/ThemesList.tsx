@@ -44,6 +44,7 @@ function ThemesList({ themes }: ThemesListProps) {
               alt={theme.name}
               width={150}
               height={150}
+              loading='lazy'
               className='rounded-t-md'
             />
 
