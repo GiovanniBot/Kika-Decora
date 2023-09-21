@@ -10,14 +10,14 @@ Bem-vindo ao Kika Decora Web App. Esta Web App permite aos clientes explorar e d
     -   [Smartphone](#smartphone)
     -   [Desktop](#desktop)
     -   [Tablet](#tablet)
--   [Estrutura do Repositório](#Repositório)
-    -   [Pasta "api"](#Pasta "api")
-    -   [Pasta "client"](#Pasta "client")
--   [Como Instalar e Executar](#Executar)
-    -   [Para a API (Node.js):](#API)
-    -   [Para o Client (React.js/Next.js):](#Client)
--   [Como Funcionam Juntos](#Juntos)
--   [Acessar Sem Instalação Local](#Local)
+-   [Estrutura do Repositório](#estrutura-do-repositório)
+    -   [Pasta "api"](#pasta-api)
+    -   [Pasta "client"](#pasta-client)
+-   [Como Instalar e Executar](#como-instalar-e-executar)
+    -   [Para a API (Node.js)](#para-a-api-nodejs)
+    -   [Para o Client (React.js/Next.js)](#para-o-client-reactjsnextjs)
+-   [Como Funcionam Juntos](#como-funcionam-juntos)
+-   [Acessar Sem Instalação Local](#acessar-sem-instalação-local)
 
 ## Recursos
 
